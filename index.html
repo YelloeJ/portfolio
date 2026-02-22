@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>YelloeJ Games</title>
-  <script type="module" crossorigin src="./assets/main-_96HYFF_.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/main-CTA65LGu.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-BN1PPE9E.css">
+  <script type="module" crossorigin src="./assets/main-CNR7NOOW.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/main-B91AP8Fd.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-C-FmSYdD.css">
 </head>
 <body>
     <header class="hero">
@@ -31,6 +31,7 @@
             </div>
     
             <ul class="links" id="navLinks">
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./games.html">Games</a></li>
                 <li><a href="./art.html">Art</a></li>
                 <li><a href="./misc.html">Misc</a></li>
@@ -40,13 +41,13 @@
     </header>
     <section class="banner">
         <video autoplay muted loop playsinline id="myVideo">
-            <source src="./assets/videos/montage1.mp4" type="video/mp4">
+            <source src="./assets/videos/montage1.mp4#t=7" type="video/mp4">
         </video>
     
         <div class="overlay"></div>
         <div>
             <div id="whiteglow">
-                <div id="three-container" style="display: flex; justify-content: center; position: relative; pointer-events: all;"></div>
+                <div id="three-container" style="display: flex; justify-content: center; position: relative; pointer-events: all; width: 100%; height: 100%;"></div>
             </div>
             <div class="inner">
                 <p class="intro">Hi. I'm </br><span>Jayson</span></p>
@@ -57,7 +58,7 @@
     </section>
 
     <div class="section-break"></div>
-    <section class="banner">
+    <section class="banner" style="height: 110vh;">
         <div class="reel-inner" style="padding-left: 0%;">
             <p id="reel-intro">check out my games here!</span></p>
             <p id="reel-subtitle">2020-2025</span></p>
@@ -74,23 +75,27 @@
         </div>
     </section>
 
-    <div class="section-break"></div>
-    <section class="banner" id="highlights">
-        <div class="overlay"></div>
+    <div class="section-break" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1 5 22) 100%, rgba(255, 255, 255, 0) 100%);"></div>
+    <section class="banner" id="highlights" style="height: 108vh;">
+        <div class="section-break" style="margin-top: 0pt; rotate: 180deg;
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1 5 22) 100%, rgba(255, 255, 255, 0) 100%);"></div>
+        <div class="overlay-light"></div>
         <h1 class="thin" style="margin-top: 6%; margin-left: 5%;">Key projects</h1>
         <div class="anchor-bottom-left">
             <h1 class="thick" style="max-width: 400px;" id="highlighted-game">
                 The Quackening
             </h1>
-            <button class="button-big">
-                See more
-            </button>
+            <a href="./quackening.html" id="highlight-button-link" target="_blank">
+                <button class="button-big">
+                    See more
+                </button>
+            </a>
         </div>
-        <p class="description anchor-bottom-right" id="highlighted-game-desc">Insert description here </br>Description number one</br>Description two</p>
-        <button class="button-arrow" style="width: 4.2vh; height: 6vh; float: right; margin-right: 1%;">
+        <p class="description anchor-bottom-right" id="highlighted-game-desc">A 3D tower defence game revolving around ducks, towers and wonky physics.</p>
+        <button class="button-arrow" style="width: 4.2vh; height: 6vh; float: right; margin-right: 1%;" id="next-btn">
             <img src="./assets/images/arrow.png" alt="" style="width: 100%; height: 100%;"></img>
         </button>
-        <button class="button-arrow" style="width: 4.2vh; height: 6vh; float: left; margin-left: 1%;">
+        <button class="button-arrow" style="width: 4.2vh; height: 6vh; float: left; margin-left: 1%;" id="prev-btn">
             <img src="./assets/images/arrow.png" alt="" style="width: 100%; height: 100%; transform: scaleX(-1);"></img>
         </button>
     </section>
@@ -103,8 +108,27 @@
         </div>
         <div class="TV-container">
             <img src="./assets/images/TV.png" alt="" class="TV-img">
+            <div class="TV-contents">
+                
+                <div class="TV-item" style="padding-left: 12.5%;">
+                    <a href="./games.html"><img src="./assets/images/TV/games.png" alt=""></a>
+                </div>
+
+                <div class="TV-item">
+                    <a href="./art.html#pixelart"><img src="./assets/images/TV/pixelart.png" alt=""></a>
+                </div>
+
+                <div class="TV-item">
+                    <a href="./art.html#3d-photo"><img src="./assets/images/TV/3dart.png" alt=""></a>
+                </div>
+
+                
+                <div class="TV-item">
+                    <a href="./art.html#drawing"><img src="./assets/images/TV/drawing.png" alt=""></a>
+                </div>
+
+            </div>
         </div>
-        
     </section>
 
     <footer id="footer">
@@ -123,6 +147,6 @@
         <div class="copyright">
             © Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> YelloeJ
         </div>
-    </footer>
+    </footer>
 </body>
 </html>
